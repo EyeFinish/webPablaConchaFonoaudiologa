@@ -156,7 +156,7 @@ ul {
   z-index: 1000;
   padding: 16px 0;
   transition: all var(--transition);
-  background: transparent;
+  background: var(--white);
 }
 
 .navbar.scrolled {
@@ -265,7 +265,7 @@ ul {
   position: relative;
   overflow: hidden;
   padding: 120px 24px 80px;
-  background-color: var(--bg);
+  background-color: var(--white);
 }
 
 .hero-decoration {
