@@ -26,6 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.classList.toggle('open');
   });
 
+  const navClose = document.getElementById('navClose');
+  if (navClose) {
+    navClose.addEventListener('click', () => {
+      navToggle.classList.remove('active');
+      navLinks.classList.remove('open');
+    });
+  }
+
   // Cerrar menú al hacer click en un link
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
